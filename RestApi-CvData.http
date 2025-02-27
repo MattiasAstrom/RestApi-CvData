@@ -1,0 +1,6 @@
+@RestApi_CvData_HostAddress = http://localhost:5059
+
+GET {{RestApi_CvData_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

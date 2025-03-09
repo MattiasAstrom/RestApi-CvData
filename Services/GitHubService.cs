@@ -35,13 +35,10 @@ public class GitHubService
         foreach (var repo in list)
         {
             if (repo.Description == null)
-            {
                 repo.Description = "No description provided";
-            }
+
             if (repo.Language == null)
-            {
                 repo.Language = "Unkown";
-            }
         }
     }
 }

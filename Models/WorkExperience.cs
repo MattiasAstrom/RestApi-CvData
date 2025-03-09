@@ -1,4 +1,6 @@
-﻿namespace RestApi_CvData.Models
+﻿using System.Text.Json.Serialization;
+
+namespace RestApi_CvData.Models
 {
     public class WorkExperience
     {
@@ -12,6 +14,7 @@
         public string EndDate { get; set; }
 
         public int FK_PersonId { get; set; }
-        public Person Person { get; set; }
+        [JsonIgnore]
+        public Person? Person { get; set; }
     }
 }
